@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Формы в HTML5</title>
+    </head>
+    <body>
+        <h2>Вводим и отправляем на сайт</h2>
+        <form method="get" action="site.html">
+            <fieldset>
+                <legend>Введите имя пользователя и пароль</legend>
+            <input type="text" name="login" value=""/>
+            <input type="password" name="password"/>
+            <input type="submit" value="Войти" />
+        </fieldset>
+        </form>
+
+<h2>Вводим, отправляем и стираем </h2>
+        <form>
+            <fieldset>
+                <legend>Введите имя пользователя и пароль</legend>
+            <p>
+            <label for="login">Логин: </label>
+            <input type="text" id="login" name="login" placeholder="Введите имя" size="18" /></p>
+            <p>
+            <label for="password">Пароль: </label>
+            <input type="password" id="password" name="password" placeholder="Введите пароль" size="18"/></p>
+            <p>
+                <input type="submit" value="Отправить" /> 
+                <input type="reset" value="Отмена" />
+            </p>
+        </fieldset>
+        </form>
+<h2>Ищем с помощью картинки-кнопки</h2>
+         <form>
+            <p>
+                <input type="text" name="search" />
+                <input type="image" src="search.png" name="submit" height="16" width="16" />
+            </p>
+        </form>
+
+        <h2>Выбираем телефончик из списка</h2>
+         <form>
+            <p><input list="phonesList" type="text" name="model" placeholder="Введите модель" /></p>
+            <p>
+                <button type="submit">Отправить</button>
+            </p>
+        </form>
+        <datalist id="phonesList">
+            <option value="iPhone 6S" label="54000"/>
+            <option value="Lumia 950">35000</option>
+            <option value="Nexus 5X"/>
+        </datalist>
+
+<h2>Указываем число</h2>
+        <form>
+            <p>
+                <label for="age">Возраст: </label>
+                <input type="number" step="1" min="1" max="100" value="10" id="age" name="age"/>
+            </p>
+            <p>
+                <button type="submit">Отправить</button>
+            </p>
+        </form>
+
+        <h2>Выбираем значение ползунком</h2>
+        <form>
+            <p>
+                <label for="HAU">Как делишки?</label> 
+                1<input type="range" step="1" min="0" max="100" value="10" id="price" name="HAU"/>100
+            </p>
+            <p>
+                <button type="submit">Отправить</button>
+            </p>
+        </form>
+
+        <h2>Флажки</h2>
+        <form>
+            <p>
+                <input type="checkbox" checked name="html5"/>HTML5
+            </p>
+            <p>
+                <input type="checkbox" name="dotnet"/>.NET
+            </p>
+            <p>
+                <input type="checkbox" name="java"/>Java
+            </p>
+            <p>
+                <button type="submit">Отправить</button>
+            </p>
+        </form>
+
+        <h2>Переключатели</h2>
+        <form>
+            <h3>Укажите пол</h3>
+            <p>
+                <input type="radio" value="man" checked name="gender"/>мужской
+            </p>
+            <p>
+                <input type="radio" value="woman" name="gender"/>женский
+            </p>
+            <h3>Чай или кофе?</h3>
+            <p>
+                <input type="radio" value="tea" checked name="tech"/>Чай
+            </p>
+            <p>
+                <input type="radio" value="coffee" name="tech"/>кофе
+            </p>
+            <p>
+                <button type="submit">Отправить</button>
+            </p>
+        </form>
+
+           <h2>Дата, время и неделя</h2>
+           <form>
+            <p>
+                <label for="week">Неделя: </label>
+                <input type="week" name="week" id="week" />
+            </p>
+            <p>
+                <label for="localdate">Дата и время: </label>
+                <input type="datetime-local" id="localdate" name="date"/>
+            </p>
+            <p>
+                <label for="month">Месяц: </label>
+                <input type="month" id="month" name="month"/>
+            </p>
+            <p>
+                <label for="time">Время: </label>
+                <input type="time" id="time" name="time"/>
+            </p>
+            <p>
+                <button type="submit">Отправить</button>
+            </p>
+        </form>
+
+        <h2> Элемент Select</h2>
+        <form method="get">
+            <p>
+                <label for="phone">Выберите модель:</label>
+             
+                <select id="phone" name="phone">
+                    <optgroup label="Apple">
+                        <option value="iphone 6s">iPhone 6S</option>
+                        <option value="iphone 6s plus">iPhone 6S Plus</option>
+                        <option value="iphone 5se">iPhone 5SE</option>
+                    </optgroup>
+                    <optgroup label="Microsoft">
+                        <option value="lumia 950">Lumia 950</option>
+                        <option value="lumia 950 xl">Lumia 950 XL</option>
+                        <option value="lumia 650">Lumia 650</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <input type="submit" value="Отправить" />
+            </p>
+        </form>
+
+        <h2>Текстовое поле</h2>
+        <form method="get">
+            <p>
+                <label for="comment">Ваш комментарий:</label><br/>
+                <textarea name="comment" id="comment" placeholder="Не более 200 символов" maxlength="200"></textarea>   
+            </p>
+            <p>
+                <input type="submit" value="Добавить" />
+            </p>
+        </form>
+    </body>
+</html>

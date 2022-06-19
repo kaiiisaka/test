@@ -1,0 +1,148 @@
+<! DOCTYPE html>
+  <head>
+    <meta charset="UTF-8">
+    <base href="content/">
+        <meta name="description" content="Первый документ HTML5">
+        <meta name="author" content="Alex">
+    <title> мой сайт </title>
+
+    <style>
+            td{
+                width: 60px; 
+                height:60px; 
+                border: solid 1px silver; 
+                text-align:center;
+            }
+        </style>
+
+    <style>
+            ul#menu li {
+                display:inline;
+                width: 200px; 
+                height:200px; 
+            }
+        </style>
+</head>
+
+<body>
+
+	<aside style="float:right; width:200px;">
+            <h2>Не понимаю как сделать навигацию</h2>
+            <p>Вот вроде всё понятно, а навигация по странице заводит меня в какую-то папку, не понимаю, как это реализовать. <img src="https://memepedia.ru/wp-content/uploads/2018/12/mem-kapets-shablon-768x563.jpg" width="200" height="100"></p>
+        </aside>
+
+  <div>
+    <h1> Вспомогательная страница </h1>
+      <p> Страница чтобы помнить основные вещи</p>
+  </div>
+
+  <div>
+	<h2>Элемент iframe</h2>
+        <iframe src="http://wikipedia.com" width="400" height="200">
+        </iframe>
+</div>
+
+  <div>
+  	<nav>
+  	<h2> Гиперссылки по странице и вообще. </h2>
+  	<ul>
+  	<li> <a href="#part1"> Мои друзья и мои интересы</a> </li>
+  	<li> <a href="#part2"> ссылка на учебник по HTML</a> </li>
+  	<li> <a href="#part3">Заголовки и виды текста</a> </li>
+  	<li> <a href="#part4">Таблица</a> </li>
+  </ul>
+</nav>
+  </div>
+
+  <div id="part1">
+    <h2> What I like? </h2>
+    <p> I like many music geners, many films, make music, but most of oll I like spending time with my <b>girlfreiend Lisa </b> (<3) and my friends.</p>
+      <img src="https://sun9-82.userapi.com/impg/lB8z6hCrJCOU7QdyzjcX2VtUMy9jEy50k16RwQ/qD6H0xjb2G0.jpg?size=767x1080&quality=96&sign=e418568f538c3b0ff60cf84ef1cfac41&type=album" width="25%"/>
+      <img src="https://sun9-40.userapi.com/impg/grMquccBufwSZP2hJrHt4JDxBOT_FkbkZXAYKw/XSF-rXCVXw4.jpg?size=801x1080&quality=96&sign=00fdcc87039576a5bdcae4e93d78a0cd&type=album" width="25%"/>
+      <img src="https://sun9-4.userapi.com/impg/ficEtJYFAsYJu-OdkCRzyHIefHdrPJLOfZp6iw/kZ32DE9YV-4.jpg?size=811x1080&quality=96&sign=554a20194293a08fcde0d8d3ce1d9902&type=album" width="25%"/>
+      <img src="https://sun9-42.userapi.com/impg/_7fTKjDxrxBRDibNBFYuGeF2JQQ2oMTbiR1Txw/NfirogDDVRc.jpg?size=810x1080&quality=96&sign=9308935c651cdba1b6f974662012b9ff&type=album" width="25%"/>
+ 
+ 
+    <h3> My top 5 films</h3>
+    <p> <em>1. Pulp fiction <br>
+      2. Forrest Gump <br>
+      3. God`s Father <br>
+      4. Inglourious Basterds <br>
+      5. Many films with Leonardo di Caprio
+      </em>
+    </p>
+  </div>
+
+<h2 id="part2"> Страница со ссылкой на учебник по html и CSS </h2>
+ <p> <a href="http://metanit.com/web/html5/" target="_blank">Учебник по HTML5</a> </p>
+
+  <div>
+    	<details>
+            <summary>распорядок дня военмеховца</summary>
+            <ul>
+                <li>6:00 пресс качат</li>
+                <li>7:00 бегит</li>
+                <li>9:00 анжумания</li>
+                <li>9:30 турник</li>
+            </ul>
+        </details>
+    </div>
+
+<div> 
+	<h2 id="part3"> Заголовки </h2>
+		<h1>Заголовок первого уровня</h1>
+        <h2>Заголовок второго уровня</h2>
+        <h3>Заголовок третьего уровня</h3>
+        <h4>Заголовок четвертого уровня</h4>
+        <h5>Заголовок пятого уровня</h5>
+        <h6>Заголовок шестого уровня</h6>
+        </div>
+        <div>
+        	<p>Форматирование в <mark>HTML5</mark></p>
+        <p>Это <b>выделенный "b"</b> текст</p>
+        <p>Это <strong>важный "strong"</strong> текст</p>
+        <p>Это <del>зачеркнутый "del"</del> текст</p>
+        <p>Это <s>недействительный "s"</s> текст</p>
+        <p>Это <em>важный</em> "em" текст</p>
+        <p>Это текст <i>курсивом</i> "i" </p>
+        <p>Это <ins>добавленный</ins> "ins" текст</p>
+        <p>Это <u>подчеркнутый</u> "u" текст</p>
+        <p> X <sub> i </sub> = Y <sup><small> 2 </small></sup> + Z <sup><small> 2 </small></sup></p>
+    </div>
+
+<h2 id="part3"> Таблица </h2>
+<table>
+    <caption><b>Crypto</b></caption>
+    <thead>
+        <tr>
+            <th colspan="2">Имя</th> <th>Возраст</th> <th>Че делает</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td colspan="2" style="background-color:red;">Даня</td> <td>21</td> <td>Boss</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="background-color:blue;">Лёха</td> <td>22</td> <td>Programms</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="background-color:green;">Серёга</td> <td>22</td> <td>Other</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <th colspan="3">Вот так и работаем</th>
+        </tr>
+    </tfoot>
+</table>
+
+    <div>
+		<ul id="menu">
+            <li>Главная</li>
+            <li>Информация</li>
+            <li>Я люблю программировать</li>
+            <li>О сайте</li>
+        </ul>
+
+</body>
+</html>
