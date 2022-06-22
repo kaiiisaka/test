@@ -10,22 +10,11 @@
         body{
             background-color: rgb(161, 114, 180);
         }
-        div{
-            background-color: aliceblue;
-            width: 1083;
-            margin: 15px;  /*внешний отступ */
-                padding: 11px; /* внутренний отступ */
-                border: 1px inset red; /* границы шириной в 3 пикселя сплошной красной линией */
-                border-radius: 20px;
-        }
             .blue{
                 background-color: blue;
             }
             .other{
                 background-color: blueviolet;
-            }
-            #header{
-                background-color: #ccc;
             }
             a:hover   {color:rgb(12, 238, 61); text-decoration:underline}
             :checked + span {
@@ -37,24 +26,24 @@
 
 <body>
    
-	<aside>
-            <h2>Не понимаю как сделать навигацию</h2>
-            <p>Надо разобраться с тем, как сделать навигацию по ссылкам внутри страницы. <img src="https://memepedia.ru/wp-content/uploads/2018/12/mem-kapets-shablon-768x563.jpg" width="210" height="100"></p>
-        </aside>
-
   <div id="header">
     <h1> Тестовая страница </h1>
       <p> Страница чтобы помнить основные вещи и тестировать знания</p>
       <p> Дизайн обязательно станет лучше</p>
   </div>
 
-  <div>
-	<h2>Элемент iframe</h2>
-        <iframe src="http://wikipedia.com" width="400" height="200">
-        </iframe>
+  <ul class="nav">
+    <li><a href="#">Главная</a></li>
+    <li><a href="#">Контакты</a></li>
+    <li><a href="#">О сайте</a></li>
+</ul>
+
+  <div id="aside">
+    <h2>Не понимаю как сделать навигацию</h2>
+    <p>Надо разобраться с тем, как сделать навигацию по ссылкам внутри страницы. <img src="https://memepedia.ru/wp-content/uploads/2018/12/mem-kapets-shablon-768x563.jpg" width="150" height="120"></p>
 </div>
 
-<div class="blue">
+<div class="blue" id="main">
     <h2 style=color:crimson>Переключатели</h2>
     <form>
         <h3>Укажите пол</h3>
@@ -74,7 +63,7 @@
     </form>
 </div>
 
-  <div>
+  <div id="main">
   	<nav>
   	<h2> Гиперссылки по странице и вообще. </h2>
   	<ul>
@@ -86,7 +75,13 @@
 </nav>
   </div>
 
-  <div id="part1"; class="other">
+  <div id="iframe">
+	<h2>Элемент iframe</h2>
+        <iframe src="http://wikipedia.com" width="150" height="200">
+        </iframe>
+</div>
+
+  <div id="main"; class="other">
     <h2> What I like? </h2>
     <p> I like many music geners, many films, make music, but most of oll I like spending time with my <b>girlfreiend Lisa </b> (<3) and my friends.</p>
       <img src="https://sun9-82.userapi.com/impg/lB8z6hCrJCOU7QdyzjcX2VtUMy9jEy50k16RwQ/qD6H0xjb2G0.jpg?size=767x1080&quality=96&sign=e418568f538c3b0ff60cf84ef1cfac41&type=album" width="25%"/>
@@ -95,13 +90,13 @@
     </p>
   </div>
 
-  <div>
+  <div id="main">
 <h2 id="part2"> Страница со ссылкой на учебник по html и CSS </h2>
  <p> <a href="http://metanit.com/web/html5/" target="_blank">Учебник по HTML5</a> </p>
 
 </div>
 
-  <div>
+  <div id="main">
     	<details>
             <summary>распорядок дня военмеховца (выпадающий список)</summary>
             <ul>
@@ -113,8 +108,8 @@
         </details>
     </div>
 
-<div> 
-	<h2 id="part3"> Заголовки </h2>
+<div id="main"> 
+	<h2> Заголовки </h2>
 		<h1>Заголовок первого уровня</h1>
         <h2>Заголовок второго уровня</h2>
         <h3>Заголовок третьего уровня</h3>
@@ -122,7 +117,8 @@
         <h5>Заголовок пятого уровня</h5>
         <h6>Заголовок шестого уровня</h6>
         </div>
-        <div>
+
+        <div id="main">
         	<p>Форматирование в <mark>HTML5</mark></p>
         <p>Это <b>выделенный "b"</b> текст</p>
         <p>Это <strong>важный "strong"</strong> текст</p>
@@ -135,7 +131,7 @@
         <p> X <sub> i </sub> = Y <sup><small> 2 </small></sup> + Z <sup><small> 2 </small></sup></p>
     </div>
 
-    <div>
+    <div id="main">
 <h2 id="part3"> Таблица </h2>
 <table>
     <caption><b>Crypto</b></caption>
@@ -163,12 +159,12 @@
 </table>
 </div>
 <!--footer-->
-    <div>
+    <div id="footer">
 		<ul id="menu">
-            <li>Главная</li>
-            <li>Информация</li>
-            <li>Я люблю программировать</li>
-            <li>О сайте</li>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Я люблю программировать</a></li>
+            <li><a href="#">О сайте</a></li>
         </ul>
 
 </body>
